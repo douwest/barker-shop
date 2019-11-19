@@ -1,0 +1,27 @@
+@import '../../colors.scss';
+@import '../../fonts.scss';
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin-top: 100px;
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  z-index: 10000;
+
+  &--logo {
+    font-family: $font-osg;
+    color: $color-font;
+    text-align: right;
+    padding: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+    float: right;
+  }
+
+  &--logo:hover{
+    color: rgb(190, 190, 255)
+  }
+}

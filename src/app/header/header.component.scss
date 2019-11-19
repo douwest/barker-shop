@@ -1,0 +1,43 @@
+@import '..//../colors.scss';
+@import '../../fonts.scss';
+
+.header {
+  background-color: $color-primary;
+  color: $color-font;
+  box-shadow: $color-shadow;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  left: 0;
+  top: 0;
+
+  &--menu {
+    height: 32px;
+    width: 32px;
+    font-size: 24px;
+    text-align: center;
+    background: $color-primary;
+    color: $color-font;
+    border-radius: 0;
+    border-style: none;
+    float:right;
+    margin-right: 20px;
+  }
+
+
+  &--logo {
+    font-size: 36px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-family: $font-primary;
+  }
+}
+
+.header>* {
+  display: inline-block;
+  vertical-align:middle;
+}
+
+button:hover{
+    background-color: $color-highlight;
+}

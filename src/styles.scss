@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import './colors.scss';
+@import "fonts";
+@import '~@angular/material/theming';
+//@import './../node_modules/font-awesome/css/font-awesome.css';
+
+@include mat-core();
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-background;
+  font-family: $font-primary;
+}
+
+* {
+  font-family: $font-primary !important;
+}
+
+$custom-typography: mat-typography-config($font-family: $font-primary);
+
+.fc td,
+.fc th {
+  height: 50px !important;
+  vertical-align: middle !important;
+}
+
+.fc td {
+  text-align: center;
+}
+
+h2{
+  margin:0 !important;
+}
