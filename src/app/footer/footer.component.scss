@@ -16,12 +16,32 @@
     color: $color-font;
     text-align: right;
     padding: 0;
+    margin-right: 5px;
+    vertical-align: middle;
     margin-bottom: 0;
     text-decoration: none;
     float: right;
   }
 
-  &--logo:hover{
+  &--logo:hover {
     color: rgb(190, 190, 255)
+  }
+
+  &__dark-mode {
+    width: 24px;
+    font-size: 14px;
+    text-align: center;
+    vertical-align:middle;
+    background: none;
+    color: $color-font;
+    border-radius: 0;
+    border-style: none;
+    float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+  &__dark-mode:hover{
+    background-color: rgb(255,255,255,0.1);
   }
 }

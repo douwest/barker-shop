@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  faDark = faMoon;
+  faLight = faSun;
+
+  isDark = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  darkMode(){
+    console.log('sup')
+    this.isDark = !this.isDark;
+    
+  }
 }

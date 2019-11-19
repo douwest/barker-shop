@@ -19,7 +19,7 @@ body {
   font-family: $font-primary !important;
 }
 
-$custom-typography: mat-typography-config($font-family: $font-primary);
+$custom-typography: mat-typography-config($font-family: $font-handwritten);
 
 .fc td,
 .fc th {
@@ -37,4 +37,9 @@ $custom-typography: mat-typography-config($font-family: $font-primary);
 
 h2{
   margin:0 !important;
+}
+
+
+.event:hover{
+  background-color: rgb(102, 51, 51) !important;
 }

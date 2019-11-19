@@ -2,6 +2,7 @@
   <div class="textbox">
       <p class="textbox--text">Hier kunt u een afspraak inplannen.</p>
   </div>
+  <div class=calendar__container>
   <full-calendar
   *ngIf="options"
   #fullcalendar
@@ -22,4 +23,5 @@
   [plugins]="options.plugins"
   (eventClick)="eventClick($event)"
 ></full-calendar>
+</div>
 </section>

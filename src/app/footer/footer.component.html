@@ -1,3 +1,5 @@
 <footer class = "footer">
+    <button *ngIf="!isDark" class = "footer__dark-mode" (click)="darkMode()"> <fa-icon [icon]="faDark"></fa-icon></button>
+    <button *ngIf="isDark" class = "footer__dark-mode" (click)="darkMode()"> <fa-icon [icon]="faLight"></fa-icon></button>
     <a class = "footer--logo" href="https://www.google.com/"> &lt;osg/&gt; </a>
 </footer>

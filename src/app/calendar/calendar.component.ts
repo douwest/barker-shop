@@ -12,6 +12,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 export class CalendarComponent implements OnInit {
   options: OptionsInput;
   eventsModel: any;
+  events : [];
   @ViewChild('fullcalendar', { static: true }) fullcalendar: FullCalendarComponent;
   ngOnInit() {
     this.options = {
@@ -34,6 +35,8 @@ export class CalendarComponent implements OnInit {
       columnHeaderFormat: {
         weekday: 'short'
       },
+      eventBackgroundColor: 'red',
+      eventClassName:'event',
       plugins: [timeGridPlugin, interactionPlugin],
     };
   }
@@ -45,10 +48,11 @@ export class CalendarComponent implements OnInit {
   }
 
   dateClick(model) {
+    
     var startDate : Date = model.date;
     var endDate : Date = new Date(model.date);
     endDate.setHours(startDate.getHours() + 2);
-    console.log(startDate + ", " + endDate);
+    console.log(startDate.toTimeString() + ', ' + endDate.toTimeString())
     this.eventsModel = [{
       title: 'Get yo dog a haircut bruh',
       start: startDate,
