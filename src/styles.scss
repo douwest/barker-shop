@@ -31,6 +31,10 @@ $custom-typography: mat-typography-config($font-family: $font-primary);
   text-align: center;
 }
 
+.fc-content-skeleton{
+  visibility: hidden !important;
+}
+
 h2{
   margin:0 !important;
 }
