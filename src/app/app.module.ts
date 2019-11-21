@@ -4,13 +4,13 @@ import { FullCalendarModule } from '@fullcalendar/angular'; // for FullCalendar!
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { AppRoutingModule } from './app-routing.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from '@angular/material';
+import { SidenavService } from './material/service/sidenav.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     CalendarComponent,
     HeaderComponent,
     FooterComponent,
-    ToolbarComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -31,7 +30,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MatIconModule,
     FontAwesomeModule,
   ],
-  providers: [],
+  providers: [SidenavService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

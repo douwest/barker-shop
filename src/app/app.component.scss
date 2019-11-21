@@ -1,46 +1,18 @@
-.sidenav{
-    min-width: 250px;
-    overflow: hidden;
-  
-    .sidenav-variable-content{
-      position:absolute;
-      bottom: 0;
-      width: 250px;
-    }
-  
-    .user-info{
-      display: block;
-      height: unset;
-      font-size: 30px;
-      padding: 50px 25px;
-  
-  
-      &__icon{
-        display: inline-block;
-        font-size: 60px;
-        margin-right: 15px;
-      }
-  
-      &__name{
-        display: inline-block;
-        font-size: inherit;
-      }
-    }
-  
-    .nav{
-      &__icon{
-        width: 16px;
-        margin-right: 10px;
-      }
-    }
-  }
-  
-  
-  .content__header{
-    color:white;
-    // font-size:32px;
-    background: linear-gradient(to right, #bc2e49, #e66465);
-    position: fixed;
-    z-index: 10;
-    top: 0;
-  }
+@import '../colors.scss';
+@import '../fonts.scss';
+
+.nav{
+  max-height:250px;
+  border-top: 5px solid;
+  border-color: $color-highlight;
+  margin-top: 55px;
+  overflow: hidden;
+  border-radius: 0 0 0 15px;
+  background-color: $color-primary;
+  color: $color-font;
+  box-shadow: 10px 10px $color-shadow; 
+}
+
+.icon{
+  margin-right:10px;
+}

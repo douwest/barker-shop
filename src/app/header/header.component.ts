@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { SidenavService } from '../material/service/sidenav.service';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +11,31 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
 
   faBars = faBars;
+  open = false;
 
-  constructor() { }
+  constructor(private sidenavService: SidenavService) { }
 
   ngOnInit() {
   }
 
-  test(){
-    console.log('hi')
+
+  toggleRightSidenav() {
+    this.sidenavService.toggle();
+    this.animate();
+  }
+
+  animate() {
+
+    console.log(this.open);
+    let icon = document.getElementById('img');
+
+    if (open) {
+      icon.className = 'icon';
+    } else {
+      icon.className = 'icon open';
+    }
+    this.open = !this.open;
+
+    console.log(icon);
   }
 }

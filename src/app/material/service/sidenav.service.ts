@@ -11,11 +11,13 @@ export class SidenavService {
   }
 
   public open() {
+    console.log('open');
     return this.sidenav.open();
   }
 
 
   public close() {
+    console.log('close');
     return this.sidenav.close();
   }
 
