@@ -24,7 +24,7 @@
   }
 
   &--logo:hover {
-    color: rgb(190, 190, 255)
+    background-color: rgb(255,255,255,0.1);
   }
 
   &__dark-mode {
@@ -44,4 +44,5 @@
   &__dark-mode:hover{
     background-color: rgb(255,255,255,0.1);
   }
+
 }

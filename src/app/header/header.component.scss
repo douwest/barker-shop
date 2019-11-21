@@ -18,7 +18,6 @@
     text-align: center;
     background: $color-primary;
     color: $color-font;
-    border-radius: 0;
     border-style: none;
     float:right;
     margin-right: 20px;
@@ -39,6 +38,10 @@
 .header>* {
   display: inline-block;
   vertical-align:middle;
+}
+
+button{
+  border-radius: 8px !important;
 }
 
 button:hover{
