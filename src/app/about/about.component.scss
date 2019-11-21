@@ -1,0 +1,23 @@
+@import './../../colors.scss';
+
+.about {
+  margin-top: 55px;
+
+  &__message {
+    background-color: $color-secondary;
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: $color-font;
+  }
+
+  &__content {
+    text-align: center;
+    margin: 40px;
+
+    &--title {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
+}
