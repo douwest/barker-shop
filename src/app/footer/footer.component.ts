@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+
+import { StyleManagerService } from '../material/service/style.manager.service';
 
 @Component({
   selector: 'app-footer',
@@ -13,14 +15,17 @@ export class FooterComponent implements OnInit {
 
   isDark = false;
 
-  constructor() { }
+  constructor(private styleManager : StyleManagerService) { }
 
   ngOnInit() {
   }
 
   darkMode(){
-    console.log('sup')
+    if(this.isDark){
+      this.styleManager.setStyle('key', 'href');
+    } else {
+      this.styleManager.setStyle('key', 'href');
+    }
     this.isDark = !this.isDark;
-    
   }
 }

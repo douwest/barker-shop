@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>Menu</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/'"> Accounts </a>
+      <a mat-button [routerLink]="'/'"> Create Account </a>
+      <a mat-button [routerLink]="'/'"> Contacts </a>
+      <a mat-button [routerLink]="'/'"> Create Contact </a>
+      <a mat-button [routerLink]="'/'"> Activities </a>
+      <a mat-button [routerLink]="'/'"> Create Activity </a>
+    </div>
+  </mat-toolbar-row>
+
+</mat-toolbar>

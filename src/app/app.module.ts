@@ -4,23 +4,31 @@ import { FullCalendarModule } from '@fullcalendar/angular'; // for FullCalendar!
 import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialModule } from './material/material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from  '@angular/material';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserAnimationsModule,
     FullCalendarModule,
     AppRoutingModule,
-    MaterialModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
     FontAwesomeModule,
   ],
   providers: [],

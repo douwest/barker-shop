@@ -2,29 +2,51 @@
 @import './../../fonts.scss';
 @import '../../colors.scss';
 
-.calendar{
-    background-color: $color-background;
-    margin-top: 52px;
-    font-family: $font-primary;
+.calendar {
+  background-color: $color-background;
+  margin-top: 52px;
+  font-family: $font-primary;
 
-    &__container{
-        margin: 10px;
-    }
+  &__container {
+    margin: 10px;
+  }
+
+  &__bottom{
+    bottom: 0;
+
+    &--image {
+        display: block;
+        width: 64px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      &--subtext {
+        font-family: $font-handwritten !important;
+        font-size: 20px;
+        color : $color-shadow;
+        text-align: center;
+        margin: 20px;
+        margin-top: 100px;
+      }
+
+  }
+
+
 }
 
-.event:hover{
-    background-color: rgb(102, 51, 51);
+.event:hover {
+  background-color: rgb(102, 51, 51);
 }
 
-.textbox{
-    background-color: $color-secondary;
-    color: $color-font;
-    padding:8px;
-    margin-bottom: 10px;
-    text-align:center;
+.textbox {
+  background-color: $color-secondary;
+  color: $color-font;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-p{
-    margin: 0;
+p {
+  margin: 0;
 }
-

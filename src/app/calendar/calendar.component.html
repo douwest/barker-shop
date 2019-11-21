@@ -1,27 +1,18 @@
 <section class="calendar">
   <div class="textbox">
-      <p class="textbox--text">Hier kunt u een afspraak inplannen.</p>
+    <p class="textbox--text">Hier kunt u een afspraak inplannen.</p>
   </div>
   <div class=calendar__container>
-  <full-calendar
-  *ngIf="options"
-  #fullcalendar
-  [defaultView]="timeGridWeek"
-  [weekends]="false"
-  [editable]="true"
-  [events]="eventsModel"
-  [header]="options.header"
-  [minTime]="options.minTime"
-  [maxTime]="options.maxTime"
-  [slotDuration]="options.slotDuration"
-  [slotLabelFormat]="options.slotLabelFormat"
-  [allDaySlot]="options.allDaySlot"
-  [contentHeight]="options.contentHeight"
-  [columnHeaderFormat]="options.columnHeaderFormat"
-  (dateClick)="dateClick($event)"
-  (eventDragStop)="eventDragStop($event)"
-  [plugins]="options.plugins"
-  (eventClick)="eventClick($event)"
-></full-calendar>
-</div>
+    <full-calendar *ngIf="options" #fullcalendar [defaultView]="timeGridWeek" [weekends]="false" [editable]="true"
+      [events]="eventsModel" [header]="options.header" [minTime]="options.minTime" [maxTime]="options.maxTime"
+      [slotDuration]="options.slotDuration" [slotLabelFormat]="options.slotLabelFormat"
+      [allDaySlot]="options.allDaySlot" [contentHeight]="options.contentHeight"
+      [columnHeaderFormat]="options.columnHeaderFormat" [height]="370" (dateClick)="dateClick($event)"
+      (eventDragStop)="eventDragStop($event)" [plugins]="options.plugins" (eventClick)="eventClick($event)">
+    </full-calendar>
+  </div>
+  <div class="calendar__bottom">
+    <p class="calendar__bottom--subtext">"All dogs need some trimming sometimes.."</p>
+    <img class="calendar__bottom--image" src="./assets/images/barber.svg">
+  </div>
 </section>
