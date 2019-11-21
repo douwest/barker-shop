@@ -6,7 +6,7 @@
         <a class="nav__menu--item" mat-list-item [routerLink]="'/about'">
           <fa-icon class="icon" [icon]="faPerson"></fa-icon> Over mij
         </a>
-        <a class="nav__menu--item" mat-list-item [routerLink]="'/'">
+        <a class="nav__menu--item" mat-list-item [routerLink]="'/calendar'">
           <fa-icon class="icon" [icon]="faCalendar"></fa-icon> Afspraak maken
         </a>
         <a class="nav__menu--item" mat-list-item [routerLink]="'/contact'">
@@ -21,7 +21,6 @@
 
         <router-outlet></router-outlet>
       </div>
-      <app-calendar></app-calendar>
 
       <app-footer></app-footer>
 

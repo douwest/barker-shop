@@ -11,6 +11,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatToolbarModule, MatIconModule, MatSidenavModule, MatListModule, MatButtonModule } from '@angular/material';
 import { SidenavService } from './material/service/sidenav.service';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { SidenavService } from './material/service/sidenav.service';
     CalendarComponent,
     HeaderComponent,
     FooterComponent,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserAnimationsModule,
