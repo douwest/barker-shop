@@ -12,7 +12,6 @@
   }
 
   &__content {
-    margin-top: 15px;
     text-align: center;
 
     &--title {
@@ -23,5 +22,24 @@
       margin-bottom: 10px;
       width: 100%
     }
+
+    &--body {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      border: solid 3px rgb(160,160,180);
+      background-color: rgb(180,180,200);
+      border-radius: 10px;
+
+      p {
+        width: 40%;
+      }
+
+      img {
+        width: 200px;
+        margin: 10px;
+      }
+    }
+
   }
 }
