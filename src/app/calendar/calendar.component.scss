@@ -6,28 +6,9 @@
   background-color: $color-background;
   margin-top: 55px;
   font-family: $font-primary;
-
   &__container {
     margin: 10px;
-  }
 
-  &__bottom{
-    bottom: 75px;
-    &--image {
-        display: block;
-        width: 64px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    
-      &--subtext {
-        font-family: $font-handwritten !important;
-        font-size: 20px;
-        color : $color-shadow;
-        text-align: center;
-        margin: 20px;
-        margin-top: 100px;
-      }
   }
 }
 
@@ -45,4 +26,8 @@
 
 p {
   margin: 0;
+}
+
+.fc-view-container{
+  overflow: hidden !important;
 }

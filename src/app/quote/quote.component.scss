@@ -1,0 +1,22 @@
+@import '../../fonts.scss';
+@import '../../colors.scss';
+
+.quote{
+  bottom: 0;
+  
+    &__image {
+        display: block;
+        width: 64px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      &__text    {
+        font-family: $font-handwritten !important;
+        font-size: 20px;
+        color : $color-shadow;
+        text-align: center;
+        margin: 20px;
+        margin-top: 100px;
+      }
+  }

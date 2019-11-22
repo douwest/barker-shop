@@ -4,7 +4,6 @@
 @import './colors.scss';
 @import "fonts";
 @import '~@angular/material/theming';
-//@import './../node_modules/font-awesome/css/font-awesome.css';
 
 @include mat-core();
 
@@ -37,9 +36,4 @@ $custom-typography: mat-typography-config($font-family: $font-handwritten);
 
 h2{
   margin:0 !important;
-}
-
-
-.event:hover{
-  background-color: rgb(102, 51, 51) !important;
 }
