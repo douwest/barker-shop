@@ -26,6 +26,7 @@ import { QuoteComponent } from './quote/quote.component';
     QuoteComponent,
   ],
   imports: [
+    BrowserModule,
     BrowserAnimationsModule,
     FullCalendarModule,
     AppRoutingModule,

@@ -3,14 +3,13 @@
     <p class="textbox--text">Hier kunt u een afspraak inplannen.</p>
   </div>
   <div class=calendar__container>
-    <full-calendar *ngIf="options" #fullcalendar [defaultView]="timeGridWeek" [weekends]="false" [editable]="true"
+    <full-calendar *ngIf="options" #fullcalendar [weekends]="false" [editable]="true"
       [events]="eventsModel" [header]="options.header" [minTime]="options.minTime" [maxTime]="options.maxTime"
       [slotDuration]="options.slotDuration" [slotLabelFormat]="options.slotLabelFormat"
       [allDaySlot]="options.allDaySlot" [contentHeight]="options.contentHeight"
       [columnHeaderFormat]="options.columnHeaderFormat" [height]="370" (dateClick)="dateClick($event)"
       (eventDragStop)="eventDragStop($event)" [plugins]="options.plugins" (eventClick)="eventClick($event)">
     </full-calendar>
-
   </div>
 </section>
 <app-quote></app-quote>

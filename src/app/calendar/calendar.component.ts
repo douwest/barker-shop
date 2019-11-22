@@ -16,6 +16,8 @@ export class CalendarComponent implements OnInit {
   @ViewChild('fullcalendar', { static: true }) fullcalendar: FullCalendarComponent;
   ngOnInit() {
     this.options = {
+      plugins: [timeGridPlugin, interactionPlugin],
+      defaultView: 'timeGridWeek',
       editable: true,
       header: {
         left: 'prev,next today',
@@ -36,8 +38,7 @@ export class CalendarComponent implements OnInit {
         weekday: 'short'
       },
       eventBackgroundColor: 'red',
-      eventClassName:'event',
-      plugins: [timeGridPlugin, interactionPlugin],
+      eventClassName:'event'
     };
   }
   eventClick(model) {
